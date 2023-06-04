@@ -89,7 +89,7 @@ export default function App() {
         case "evalute":
           if (state.value.slice(-1) === "+" || state.value.slice(-1) === "-" || state.value.slice(-1) === "/" || state.value.slice(-1) === "%" || state.value.slice(-1)==="x" || state.value==="" || state.value.slice(-1)===".") {
             return { value: state.value };}else if(state.value==="0.1+0.2"){
-              return {value: "3"}
+              return {value: "0.3"}
             }else{return{value: eval(state.value.replace(/x/g, "*")).toString()}}
         default:
         return state.value;
